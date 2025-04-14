@@ -21,19 +21,23 @@
     <!-- Contenedor principal -->
     <div class="container-lg py-5 px-3">
       <!-- Encabezado -->
-      <header class="text- mb-5">
-        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+      <header class="text-center mb-5">
+        <div class="d-flex align-items-center justify-content-center gap-3">
           <img
             src="./assets/img/FOTO_PERFIL.jpg"
             alt="Foto de perfil"
-            class="profile-img"
+            class="rounded-circle border border-light profile-img align-self-start"
+            width="200"
+            height="200"
           />
 
           <div>
-            <h1 class="mb-0">Aaron R. Perez Moreno</h1>
-            <h3>Software Developer | Backend & Databases</h3>
-            <p><i class="bi bi-geo-alt"></i> Valencia, España</p>
-            <div class="d-flex flex-wrap gap-3">
+            <h1 class="text-start mb-0">Aaron R. Perez Moreno</h1>
+            <h3 class="text-start">Software Developer | Backend & Databases</h3>
+            <p class="text-start">
+              <i class="bi bi-geo-alt"></i> Valencia, España
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
               <!-- Links redes profesionales -->
               <a
                 class="btn btn-outline-primary"
@@ -63,7 +67,7 @@
 
       <!-- Sección "Sobre mí" -->
       <section id="sobre-mi" class="mb-5">
-        <h2 class="text-star section-title">Sobre mí</h2>
+        <h2 class="text-start">Sobre mí</h2>
         <p class="text-start">
           Desarrollador web con un enfoque en backend, bases de datos y
           optimización de sistemas. Cuento con formación en desarrollo web y
@@ -77,11 +81,12 @@
           proyecto.
         </p>
       </section>
+      <hr class="border border-primary border-3 opacity-75" />
 
       <!-- Sección "Tecnologías" -->
 
       <section id="tecnologias" class="mb-5">
-        <h2 class="text-star section-title">Tecnologías</h2>
+        <h2 class="text-center">Tecnologías</h2>
         <div class="d-flex flex-wrap justify-content-center gap-3">
           <button class="btn btn-outline-light">
             <i class="bi bi-filetype-js"></i> Python
@@ -104,46 +109,27 @@
 
       <!-- Sección "Proyectos" -->
       <section id="proyectos" class="mb-5">
-        <h2 class="text-star section-title">Proyectos</h2>
-        <div class="d-flex flex-column gap-4">
-          <!-- Proyecto 1 -->
-          <div
-            class="card bg-dark text-light flex-md-row align-items-center position-relative overflow-hidden"
-          >
-            <div class="card-body w-100">
-              <h5 class="card-title">Alpha Digital Media</h5>
-              <p class="card-text">
-                Este es un proyecto personal realizado con php, representacion
-                empresarial para .
-              </p>
-            </div>
-            <!-- imagen con overlay interactivo -->
-            <div class="position-relative">
-              <img
-                src="./assets/img/ADM_SCREEN.png"
-                class="img-fluid rounded-end project-image"
-                alt="Imagen del proyecto Alpha"
-                data-bs-toggle="modal"
-                data-bs-target="#modalImagen1"
-                style="cursor: pointer"
-              />
+        <h2 class="text-center">Proyectos</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card bg-dark text-light h-100">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">
+                  Descripción del proyecto destacando tecnologías y funciones.
+                </p>
+              </div>
             </div>
           </div>
-
-          <!-- Proyecto 2 -->
-          <div class="card bg-dark text-light flex-md-row align-items-center">
-            <div class="card-body w-100">
-              <h5 class="card-title">Ventanas David</h5>
-              <p class="card-text">
-                Descripción del proyecto destacando tecnologías y funciones.
-              </p>
+          <div class="col-md-4">
+            <div class="card bg-dark text-light h-100">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2</h5>
+                <p class="card-text">
+                  Descripción del proyecto destacando tecnologías y funciones.
+                </p>
+              </div>
             </div>
-            <img
-              src="https://via.placeholder.com/150"
-              class="img-fluid rounded-end d-none d-md-block"
-              alt="Imagen del proyecto 2"
-              style="max-width: 200px"
-            />
           </div>
         </div>
       </section>
@@ -244,7 +230,7 @@
       <!-- Sección "Experiencia" -->
       <section id="experiencia" class="mb-5">
         <h2 class="text-center">Experiencia</h2>
-        <div class="card bg-dark text-light mb-3">
+        <div class="card bg-secondary text-light mb-3">
           <div class="card-body">
             <h5 class="card-title">Título del puesto</h5>
             <h6 class="card-subtitle mb-2 text-muted">Fecha / Período</h6>
@@ -309,7 +295,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title text-muted" id="certificadoModalLabel1">
-              Certificado Desarrollo Web con Python
+              Certificado Desarrollo Web CON Python
             </h5>
             <button
               type="button"
@@ -359,41 +345,5 @@
         </div>
       </div>
     </div>
-    <!-- Modales para overlay PROYECTOS -->
-    <!-- PROYECTO 1 -->
-    <!-- Modal Imagen Proyecto 1 -->
-    <div
-      class="modal fade"
-      id="modalImagen1"
-      tabindex="-1"
-      aria-labelledby="modalImagen1Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <h5 class="modal-title text-light" id="modalImagen1Label">
-              Alpha Digital Media
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-          <div class="modal-body text-center">
-            <img
-              src="./assets/img/ADM_SCREEN.png"
-              class="img-fluid rounded"
-              alt="Imagen ampliada del proyecto"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROYECTO 2 -->
-    <!-- Modal Imagen Proyecto 2 -->
   </body>
 </html>

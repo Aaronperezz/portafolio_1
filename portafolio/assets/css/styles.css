@@ -1,4 +1,6 @@
-* Estilos personalizados */ body {
+/*  Estilos personalizados */
+
+body {
   background-color: #121821; /* Fondo oscuro mejorado */
   color: #e0e0e0; /* Texto gris claro más suave */
   font-family: sans-serif;
@@ -61,7 +63,10 @@ a:hover {
 
 /* ******Estilos para overlays en proyectos *******/
 .project-image {
-  transition: transform 0.3s ease;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-image:hover {

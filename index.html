@@ -55,7 +55,7 @@
               </a>
               <a
                 class="btn btn-outline-primary"
-                href="../portafolio/assets/Currículo_Aaron_Abril.pdf"
+                href="./assets/Currículo_Aaron_Abril.pdf"
                 role="button"
               >
                 <i class="bi bi-file-earmark-person"></i> CV
@@ -104,7 +104,7 @@
           </button>
         </div>
       </section>
-      <hr />
+    
 
       <!-- Sección "Proyectos" -->
       <section id="proyectos" class="mb-5">
@@ -115,7 +115,7 @@
             class="card bg-dark text-light flex-md-row align-items-center position-relative overflow-hidden"
           >
             <div class="card-body w-100">
-              <h5 class="card-title">Alpha Digital Media</h5>
+              <h5 class="card-title fs-3">Alpha Digital Media</h5>
               <p class="card-text">
                 Este es un proyecto personal realizado con php, representacion
                 empresarial para ADM.
@@ -124,7 +124,7 @@
             <!-- imagen con overlay interactivo -->
             <div class="position-relative">
               <img
-                src="./assets/img/ADM_SCREEN.png"
+                src="./assets/img/captura_ADM.png"
                 class="rounded- end project-image"
                 alt="Imagen del proyecto Alpha"
                 data-bs-toggle="modal"
@@ -137,22 +137,26 @@
           <!-- Proyecto 2 -->
           <div class="card bg-dark text-light flex-md-row align-items-center">
             <div class="card-body w-100">
-              <h5 class="card-title">Proyecto 2</h5>
+              <h5 class="card-title fs-3">Digitalización de menu</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
-                ullam quibusdam quaerat assumenda, inventore totam quasi, neque
-                vitae esse eligendi nihil ex, beatae quod minus. Perferendis
-                odio quisquam illo quam.
+                Proyecto de digitalización de menu, interactivo, con carro de
+                compras, este permite a los clientes realizar su pedido desde la
+                mesa y pagar la cuenta directamente desde su dispositivo movil,
+                evitando esperas y mejorando la experiencia del cliente.
               </p>
             </div>
-            <img
-              src="https://via.placeholder.com/150"
-              class="img-fluid rounded-end d-none d-md-block"
-              alt="Imagen del proyecto 2"
-              style="max-width: 200px"
-            />
+            <!-- imagen con overlay interactivo -->
+            <div class="position-relative">
+              <img
+                src="./assets/img/captura_menu.png"
+                class="rounded- end project-image"
+                alt="Imagen del proyecto menu digital"
+                data-bs-toggle="modal"
+                data-bs-target="#modalImagen2"
+                style="cursor: pointer"
+              />
+            </div>
           </div>
-        </div>
       </section>
 
       <!-- Sección "Formación" -->
@@ -399,5 +403,35 @@
 
     <!-- PROYECTO 2 -->
     <!-- Modal Imagen Proyecto 2 -->
+    <div
+      class="modal fade"
+      id="modalImagen2"
+      tabindex="-1"
+      aria-labelledby="modalImagen1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-light" id="modalImagen1Label">
+              Menu Digital 
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img
+              src="./assets/img/menu-temple.png"
+              class="img-fluid rounded"
+              alt="Imagen ampliada del proyecto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,1 +1,1 @@
-// Este archivo contendrá cualquier script de JavaScript que necesites para interactividad en tu portafolio.
+// scripst

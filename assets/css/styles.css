@@ -7,11 +7,12 @@ body {
 }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 260px;
+  height: 270px;
   border-radius: 50%; /* Imagen redonda */
   object-fit: cover;
-  border: 3px solid #fff; /* Borde blanco */
+  border: 3px solid #2626f2; /* Borde blanco */
+  transition: transform 0.3s ease;
 }
 
 /* Para las imágenes de la vista previa  */

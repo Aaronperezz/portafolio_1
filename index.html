@@ -110,7 +110,29 @@
       <section id="proyectos" class="mb-5">
         <h2 class="text-star section-title">Proyectos</h2>
         <div class="d-flex flex-column gap-4">
-          <!-- Proyecto 1 -->
+           <!-- Proyecto 1 -->
+           <div
+           class="card bg-dark text-light flex-md-row align-items-center position-relative overflow-hidden"
+         >
+           <div class="card-body w-100">
+             <h5 class="card-title fs-3">Web Raxen</h5>
+             <p class="card-text">
+              Desarrollo del sitio web Raxen, partiendo de una maqueta estática en HTML y CSS, que luego fue migrada y adaptada como un tema personalizado para WordPress utilizando PHP. Se implementó un loop dinámico para mostrar proyectos como entradas, se estructuró el sitio con archivos base del theme y se utilizó XAMPP para pruebas locales antes de empaquetarlo con Duplicator para su entrega final.
+             </p>
+           </div>
+           <!-- imagen con overlay interactivo -->
+           <div class="position-relative">
+             <img
+               src="./assets/img/captura_min_Raxen2.png"
+               class="rounded- end project-image"
+               alt="Imagen del proyecto Alpha"
+               data-bs-toggle="modal"
+               data-bs-target="#modalImagen0"
+               style="cursor: pointer"
+             />
+           </div>
+         </div>
+          <!-- Proyecto 2 -->
           <div
             class="card bg-dark text-light flex-md-row align-items-center position-relative overflow-hidden"
           >
@@ -128,13 +150,13 @@
                 class="rounded- end project-image"
                 alt="Imagen del proyecto Alpha"
                 data-bs-toggle="modal"
-                data-bs-target="#modalImagen1"
+                data-bs-target="#modalImagen0"
                 style="cursor: pointer"
               />
             </div>
           </div>
 
-          <!-- Proyecto 2 -->
+          <!-- Proyecto 3 -->
           <div class="card bg-dark text-light flex-md-row align-items-center">
             <div class="card-body w-100">
               <h5 class="card-title fs-3">Digitalización de menu</h5>
@@ -420,8 +442,40 @@
     </div>
   </div>
     <!-- Modales para overlay PROYECTOS -->
-    <!-- PROYECTO 1 -->
-    <!-- Modal Imagen Proyecto 1 -->
+      <!-- PROYECTO 1 -->
+    <!-- Modal Imagen Proyecto 1-->
+    <div
+    class="modal fade"
+    id="modalImagen0"
+    tabindex="-1"
+    aria-labelledby="modalImagen1Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-light" id="modalImagen1Label">
+            Web Raxen
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="./assets/img/Capture-raxen_web.png"
+            class="img-fluid rounded"
+            alt="Imagen ampliada del proyecto"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- PROYECTO 2 -->
+    <!-- Modal Imagen Proyecto 2-->
     <div
       class="modal fade"
       id="modalImagen1"
@@ -453,8 +507,8 @@
       </div>
     </div>
 
-    <!-- PROYECTO 2 -->
-    <!-- Modal Imagen Proyecto 2 -->
+    <!-- PROYECTO 3 -->
+    <!-- Modal Imagen Proyecto 3 -->
     <div
       class="modal fade"
       id="modalImagen2"
